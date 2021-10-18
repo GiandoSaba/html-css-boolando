@@ -79,12 +79,14 @@ html {
     top:20px;
     right: 0;
     background-color: white;
+    z-index: 2;
 }
 
 .discount-container {
     position: absolute;
     bottom: 20px;
-    left: 0; 
+    left: 0;
+    z-index: 2;
 }
 
 .sconto {
@@ -103,5 +105,19 @@ html {
     font-weight: bold;
     color: white;
     padding: 4px;
+}
 
+/* hover */
+
+.image-container img.hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.image-container:hover img.hover {
+    display: block;
+    z-index: 1;
 }
