@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+    background-color: red;
+}
+
+.product-container {
+    float: left;
+    width: calc(100% / 3 - 20px);
+    margin: 50px 10px;
+
+}
+
+.img {
+    height: 600px;
+    background-color: magenta;
+}
+
+.text {
+    height: 100px;
+    background-color: yellow;
+}
