@@ -82,6 +82,11 @@ html {
     z-index: 2;
 }
 
+.heart a {
+    text-decoration: none;
+    color: black;
+}
+
 .discount-container {
     position: absolute;
     bottom: 20px;
@@ -120,4 +125,9 @@ html {
 .image-container:hover img.hover {
     display: block;
     z-index: 1;
+}
+
+
+.heart:hover  > a {
+    color: red;
 }
