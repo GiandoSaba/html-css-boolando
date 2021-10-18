@@ -1,3 +1,5 @@
+/* common */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +17,11 @@ html {
     clear: both;
 }
 
+.relative {
+    position: relative;
+}
+
+/* container  */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -23,15 +30,20 @@ html {
 .product-container {
     float: left;
     width: calc(100% / 3 - 20px);
-    margin: 50px 10px;
+    margin: 30px 10px;
 }
 
+.text-container{
+    line-height: 1.2em;
+}
+
+/* specifiche  */
 .image-container img{
     width: 100%;
 }
 
 .text-container h4 {
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: normal;
     margin: 5px 0 0;
 }
@@ -53,4 +65,43 @@ html {
 .text-container span.lined-price {
     text-decoration: line-through;
     font-weight: bold;
+}
+
+/* banner in immagini  */
+
+.heart{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2em;
+    position: absolute;
+    top:20px;
+    right: 0;
+    background-color: white;
+}
+
+.discount-container {
+    position: absolute;
+    bottom: 20px;
+    left: 0; 
+}
+
+.sconto {
+    background-color: red;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    padding: 4px;
+}
+
+.green-banner {
+    background-color: green;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    padding: 4px;
+
 }
